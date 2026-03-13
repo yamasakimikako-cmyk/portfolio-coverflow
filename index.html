@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZIGENG ZHANG</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar mobile-only">
+      <button class="menu-btn" type="button">☰</button>
+      <div class="brand-row">
+        <h1 class="site-title">ZIGENG ZHANG</h1>
+        <button class="info-btn" type="button" id="infoToggle">INFO</button>
+      </div>
+    </header>
+
+    <aside class="profile-panel" id="profilePanel">
+      <h1 class="site-title desktop-only">ZIGENG ZHANG</h1>
+      <div class="profile-copy">
+        <p>&gt; b.2003 artist &amp; designer</p>
+        <p>&gt; tel: 137********</p>
+        <p>&gt; email: yamasakimikako@gmail.com</p>
+        <p>&gt; 2024–2026 archive</p>
+      </div>
+    </aside>
+
+    <main class="coverflow-stage">
+      <button class="nav-hit nav-left desktop-only" id="prevBtn" aria-label="Previous project"></button>
+
+      <section class="coverflow" id="coverflow">
+        <article class="cover side left" id="leftCover">
+          <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200&auto=format&fit=crop" alt="Previous project" />
+        </article>
+
+        <article class="cover active" id="activeCover">
+          <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200&auto=format&fit=crop" alt="Active project" />
+        </article>
+
+        <article class="cover side right" id="rightCover">
+          <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1200&auto=format&fit=crop" alt="Next project" />
+        </article>
+      </section>
+
+      <button class="nav-hit nav-right desktop-only" id="nextBtn" aria-label="Next project"></button>
+    </main>
+
+    <nav class="project-nav desktop-nav" id="desktopNav"></nav>
+    <nav class="project-nav mobile-nav" id="mobileNav"></nav>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
